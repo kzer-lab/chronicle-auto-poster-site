@@ -65,4 +65,4 @@ Because this is an internal tool, there is no public signup, UI, or hosted backe
 
 For questions about this project or the studio tool, contact:
 
-**kzer-lab** – `youremail@example.com`
+**kzer-lab** – `kzerlabz@gmail.com`
