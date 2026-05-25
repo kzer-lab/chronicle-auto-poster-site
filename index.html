@@ -3,48 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SavvySagas Studio</title>
+    <title>Savvy Studio | TikTok Creator Platform</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 40px 20px; background-color: #f9f9f9; }
-        .container { background-color: #fff; padding: 40px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-        h1 { color: #00e5ff; font-size: 2.5em; margin-bottom: 5px; text-shadow: 1px 1px 2px rgba(0,0,0,0.8); }
-        .subtitle { font-size: 1.2em; color: #666; margin-bottom: 30px; font-weight: bold; }
-        h2 { color: #222; border-bottom: 2px solid #00e5ff; padding-bottom: 10px; margin-top: 30px; }
-        ul { padding-left: 20px; }
-        li { margin-bottom: 10px; }
-        .footer-links { margin-top: 40px; padding-top: 20px; border-top: 1px solid #eee; font-size: 0.9em; }
-        .footer-links a { color: #00e5ff; text-decoration: none; margin-right: 15px; font-weight: bold; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; color: #333; margin: 0; background-color: #f4f7f6; }
+        .header { background-color: #111; padding: 20px 40px; color: #fff; display: flex; justify-content: space-between; align-items: center; }
+        .header h1 { margin: 0; color: #00e5ff; font-size: 1.8em; }
+        .hero { text-align: center; padding: 80px 20px; background: #fff; border-bottom: 1px solid #eaeaea; }
+        .hero h2 { font-size: 2.5em; margin-bottom: 15px; color: #111; }
+        .hero p { font-size: 1.2em; color: #666; max-width: 600px; margin: 0 auto 30px auto; }
+        .btn-tiktok { background-color: #fe2c55; color: #fff; text-decoration: none; padding: 15px 30px; font-size: 1.1em; font-weight: bold; border-radius: 5px; display: inline-block; transition: background 0.3s; }
+        .btn-tiktok:hover { background-color: #e0274b; }
+        .features { display: flex; justify-content: center; gap: 40px; padding: 60px 20px; max-width: 1000px; margin: 0 auto; }
+        .feature-card { background: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); flex: 1; text-align: center; }
+        .feature-card h3 { color: #00e5ff; margin-bottom: 15px; }
+        .footer { text-align: center; padding: 40px; color: #777; font-size: 0.9em; }
+        .footer a { color: #00e5ff; text-decoration: none; margin: 0 10px; }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div style="background: #111; padding: 20px; border-radius: 8px; text-align: center; margin-bottom: 30px;">
-            <h1>SavvySagas Studio</h1>
-            <div style="color: #fff;" class="subtitle">Content Management Platform</div>
+
+    <div class="header">
+        <h1>Savvy Studio</h1>
+        <a href="#" class="btn-tiktok" style="padding: 10px 20px; font-size: 0.9em;">Creator Login</a>
+    </div>
+
+    <div class="hero">
+        <h2>Publish to TikTok with Confidence</h2>
+        <p>The premier content management platform for creators. Generate drafts, review your captions, and publish directly to your authenticated TikTok profile.</p>
+        <a href="#" class="btn-tiktok">Log in with TikTok</a>
+        <p style="font-size: 0.8em; color: #999; margin-top: 15px;">Secure OAuth Authentication • We never store your password</p>
+    </div>
+
+    <div class="features">
+        <div class="feature-card">
+            <h3>1. Connect</h3>
+            <p>Securely link your TikTok account using official Login Kit OAuth permissions.</p>
         </div>
-
-        <p>A comprehensive studio workflow that empowers TikTok creators to render, schedule, and publish short-form documentary and storytelling videos directly to their accounts.</p>
-
-        <h2>What it does</h2>
-        <ul>
-            <li>Provides tools for creators to generate and manage documentary-style video scripts.</li>
-            <li>Renders voiceovers, visuals, and final vertical video files.</li>
-            <li>Uses the TikTok API to seamlessly publish finished videos directly to the authenticated creator's account.</li>
-            <li>Automates repetitive scheduling and publishing workflows to help creators scale their channels.</li>
-        </ul>
-
-        <h2>Data & Privacy</h2>
-        <ul>
-            <li>Creator-first platform designed to protect user privacy.</li>
-            <li>Does not sell, share, or redistribute personal data to third parties.</li>
-            <li>Securely manages render assets, captions, and logs required for the publishing process.</li>
-            <li>Uses the TikTok API strictly to authorize, upload, and manage content on the authenticated creator's behalf.</li>
-        </ul>
-
-        <div class="footer-links">
-            <a href="privacy.html">Privacy Policy</a>
-            <a href="tos.html">Terms of Service</a>
+        <div class="feature-card">
+            <h3>2. Review</h3>
+            <p>Preview your generated MP4 videos, edit captions, and check your hashtags.</p>
+        </div>
+        <div class="feature-card">
+            <h3>3. Publish</h3>
+            <p>Push your content directly to your TikTok feed or save it as a draft using the Content Posting API.</p>
         </div>
     </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Savvy Studio Platform. All rights reserved.</p>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="tos.html">Terms of Service</a>
+    </div>
+
 </body>
 </html>
