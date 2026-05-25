@@ -56,14 +56,11 @@
     </div>
 
     <script>
-        // Check if the URL has a '?code=' parameter (which means TikTok just redirected the user back)
         window.onload = function() {
             const urlParams = new URLSearchParams(window.location.search);
             if (urlParams.has('code')) {
-                document.getElementById('hero-title').innerText = "✅ Authentication Successful!";
-                document.getElementById('hero-desc').innerText = "Your TikTok account is securely connected. You can now use the Savvy Studio backend tool to publish your videos.";
-                document.getElementById('hero-btn').style.display = "none";
-                document.getElementById('hero-sub').style.display = "none";
+                // Instantly forward the TikTok login code back to your local Flask server!
+                window.location.href = "http://localhost:5000/auth/tiktok/callback" + window.location.search;
             }
         };
     </script>
