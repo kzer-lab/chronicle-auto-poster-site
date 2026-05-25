@@ -59,10 +59,11 @@
         window.onload = function() {
             const urlParams = new URLSearchParams(window.location.search);
             if (urlParams.has('code')) {
-                // Instantly forward the TikTok login code back to your local Flask server!
-                window.location.href = "http://localhost:5000/auth/tiktok/callback" + window.location.search;
+                // Instantly forward the TikTok login code back to your local Flask server on Port 5001!
+                window.location.href = "http://localhost:5001/auth/tiktok/callback" + window.location.search;
             }
         };
     </script>
+
 </body>
 </html>
